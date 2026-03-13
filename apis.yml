@@ -1,0 +1,32 @@
+aid: microsoft-azure-automation
+url: https://raw.githubusercontent.com/api-evangelist/microsoft-azure-automation/refs/heads/main/apis.yml
+apis:
+  - aid: microsoft-azure-automation:rest-api
+    name: Azure Automation REST API
+    tags:
+      - Automation
+      - Runbooks
+      - Configuration Management
+      - Update Management
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://management.azure.com/
+    humanURL: https://learn.microsoft.com/en-us/rest/api/automation/
+    properties:
+      - url: https://learn.microsoft.com/en-us/rest/api/automation/
+        type: Documentation
+    description: >-
+      Azure Automation REST API enables management of process automation through runbooks, desired state configuration, update management, and change tracking. It supports creating PowerShell and Python runbooks, scheduling jobs, managing credentials, and configuring hybrid workers.
+common:
+  - type: Portal
+    url: https://portal.azure.com/
+  - type: Pricing
+    url: https://azure.microsoft.com/en-us/pricing/
+  - type: Terms of Service
+    url: https://www.microsoft.com/en-us/legal/terms-of-use
+  - type: Privacy Policy
+    url: https://privacy.microsoft.com/en-us/privacystatement
+  - type: Support
+    url: https://support.microsoft.com/
+maintainers:
+  - name: Kin Lane
+    email: kin@apievangelist.com
