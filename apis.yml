@@ -24,6 +24,8 @@ apis:
     baseURL: https://management.azure.com/
     humanURL: https://learn.microsoft.com/en-us/rest/api/automation/
     properties:
+      - url: openapi/microsoft-azure-automation-openapi.yml
+        type: OpenAPI
       - url: https://learn.microsoft.com/en-us/rest/api/automation/
         type: Documentation
     description: >-
