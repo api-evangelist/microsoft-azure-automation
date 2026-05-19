@@ -1,0 +1,70 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Azure Automation REST API — Operations
+  description: 'Azure Automation REST API — Operations. 1 operations. Lead operation: Azure Automation REST API List operations.
+    Self-contained Naftiko capability covering one Microsoft Azure Automation business surface.'
+  tags:
+  - Microsoft Azure Automation
+  - Operations
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    MICROSOFT_AZURE_AUTOMATION_API_KEY: MICROSOFT_AZURE_AUTOMATION_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: microsoft-azure-automation-operations
+    baseUri: https://management.azure.com
+    description: Azure Automation REST API — Operations business capability. Self-contained, no shared references.
+    resources:
+    - name: providers-Microsoft.Automation-operations
+      path: /providers/Microsoft.Automation/operations
+      operations:
+      - name: listoperations
+        method: GET
+        description: Azure Automation REST API List operations
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    authentication:
+      type: bearer
+      token: '{{env.MICROSOFT_AZURE_AUTOMATION_API_KEY}}'
+  exposes:
+  - type: rest
+    namespace: microsoft-azure-automation-operations-rest
+    port: 8080
+    description: REST adapter for Azure Automation REST API — Operations. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/providers/microsoft-automation/operations
+      name: providers-microsoft-automation-operations
+      description: REST surface for providers-Microsoft.Automation-operations.
+      operations:
+      - method: GET
+        name: listoperations
+        description: Azure Automation REST API List operations
+        call: microsoft-azure-automation-operations.listoperations
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: microsoft-azure-automation-operations-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Azure Automation REST API — Operations. One tool per consumed operation, routed inline through
+      this capability's consumes block.
+    tools:
+    - name: azure-automation-rest-api-list
+      description: Azure Automation REST API List operations
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: microsoft-azure-automation-operations.listoperations
+      outputParameters:
+      - type: object
+        mapping: $.
