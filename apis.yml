@@ -7,44 +7,46 @@ url: https://raw.githubusercontent.com/api-evangelist/microsoft-azure-automation
 created: '2026-03-13'
 modified: '2026-05-19'
 tags:
-- Automation
-- Configuration Management
-- Runbooks
-- Update Management
-apis:
-- aid: microsoft-azure-automation:rest-api
-  name: Azure Automation REST API
-  tags:
   - Automation
   - Configuration Management
   - Runbooks
   - Update Management
-  image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-  baseURL: https://management.azure.com/
-  humanURL: https://learn.microsoft.com/en-us/rest/api/automation/
-  properties:
-  - url: openapi/microsoft-azure-automation-openapi.yml
-    type: OpenAPI
-  - url: https://learn.microsoft.com/en-us/rest/api/automation/
-    type: Documentation
-  - type: NaftikoCapability
-    url: capabilities/microsoft-azure-automation-automation-accounts.yaml
-  - type: NaftikoCapability
-    url: capabilities/microsoft-azure-automation-operations.yaml
-  description: Azure Automation REST API enables management of process automation through runbooks, desired state configuration,
-    update management, and change tracking. It supports creating PowerShell and Python runbooks, scheduling jobs, managing
-    credentials, and configuring hybrid workers.
+apis:
+  - aid: microsoft-azure-automation:rest-api
+    name: Azure Automation REST API
+    tags:
+    - Automation
+    - Configuration Management
+    - Runbooks
+    - Update Management
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://management.azure.com/
+    humanURL: https://learn.microsoft.com/en-us/rest/api/automation/
+    properties:
+    - url: openapi/microsoft-azure-automation-openapi.yml
+      type: OpenAPI
+    - url: https://learn.microsoft.com/en-us/rest/api/automation/
+      type: Documentation
+    - type: NaftikoCapability
+      url: capabilities/microsoft-azure-automation-automation-accounts.yaml
+    - type: NaftikoCapability
+      url: capabilities/microsoft-azure-automation-operations.yaml
+    description: Azure Automation REST API enables management of process automation through runbooks, desired state configuration,
+      update management, and change tracking. It supports creating PowerShell and Python runbooks, scheduling jobs, managing
+      credentials, and configuring hybrid workers.
 common:
-- type: Portal
-  url: https://portal.azure.com/
-- type: Pricing
-  url: https://azure.microsoft.com/en-us/pricing/
-- type: TermsOfService
-  url: https://www.microsoft.com/en-us/legal/terms-of-use
-- type: PrivacyPolicy
-  url: https://privacy.microsoft.com/en-us/privacystatement
-- type: Support
-  url: https://support.microsoft.com/
+  - type: GitHubOrganization
+    url: https://github.com/azureautomation
+  - type: Portal
+    url: https://portal.azure.com/
+  - type: Pricing
+    url: https://azure.microsoft.com/en-us/pricing/
+  - type: TermsOfService
+    url: https://www.microsoft.com/en-us/legal/terms-of-use
+  - type: PrivacyPolicy
+    url: https://privacy.microsoft.com/en-us/privacystatement
+  - type: Support
+    url: https://support.microsoft.com/
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+  - FN: Kin Lane
+    email: kin@apievangelist.com
