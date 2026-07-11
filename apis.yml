@@ -33,6 +33,10 @@ apis:
       update management, and change tracking. It supports creating PowerShell and Python runbooks, scheduling jobs,
       managing credentials, and configuring hybrid workers.
 common:
+  - type: DomainSecurity
+    url: security/microsoft-azure-automation-domain-security.yml
+  - type: Authentication
+    url: authentication/microsoft-azure-automation-authentication.yml
   - type: OAuthScopes
     url: scopes/microsoft-azure-automation-scopes.yml
   - type: GitHubOrganization
