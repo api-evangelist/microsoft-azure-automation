@@ -1,0 +1,16 @@
+{
+  "provider": "microsoft-azure-automation",
+  "sources": [
+    "microsoft-azure-automation-automation-accounts-api-openapi.yml",
+    "microsoft-azure-automation-operations-api-openapi.yml"
+  ],
+  "outputs": [
+    "microsoft-azure-automation-automation-accounts-api-openapi.yml",
+    "microsoft-azure-automation-operations-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
