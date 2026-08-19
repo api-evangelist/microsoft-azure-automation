@@ -3,6 +3,7 @@ name: Azure Automation
 description: >-
   Learn how the Azure Automation service provides a highly reliable and scalable workflow execution engine to automate
   frequently repeated management tasks.
+specificationVersion: '0.23'
 accessModel:
   pricing: freemium
   onboarding: self-serve
