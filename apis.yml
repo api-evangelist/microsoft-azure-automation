@@ -3,6 +3,18 @@ name: Azure Automation
 description: >-
   Learn how the Azure Automation service provides a highly reliable and scalable workflow execution engine to automate
   frequently repeated management tasks.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 specificationVersion: '0.23'
 accessModel:
   pricing: freemium
