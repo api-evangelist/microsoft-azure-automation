@@ -1,8 +1,7 @@
 aid: microsoft-azure-automation
 name: Azure Automation
-description: >-
-  Learn how the Azure Automation service provides a highly reliable and scalable workflow execution engine to automate
-  frequently repeated management tasks.
+description: Learn how the Azure Automation service provides a highly reliable and scalable workflow execution
+  engine to automate frequently repeated management tasks.
 deliveryModel:
   model: saas
   open_source: false
@@ -32,15 +31,15 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/microsoft-azure-automation.png
 url: https://raw.githubusercontent.com/api-evangelist/microsoft-azure-automation/refs/heads/main/apis.yml
 created: '2026-03-13'
-modified: '2026-05-19'
+modified: '2026-09-16'
 tags:
-  - Automation
-  - Configuration Management
-  - Runbooks
-  - Update Management
+- Automation
+- Configuration Management
+- Runbooks
+- Update Management
 apis:
 - aid: microsoft-azure-automation:microsoft-azure-automation-automation-accounts-api
-  name: Azure Automation Automation Accounts API
+  name: Azure Automation Accounts API
   description: Automation Accounts operations
   humanURL: https://learn.microsoft.com/en-us/rest/api/automation/
   baseURL: https://management.azure.com/
@@ -65,34 +64,34 @@ apis:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/rest/api/automation/
 common:
-  - type: Website
-    url: https://www.microsoft.com/
-  - type: AgenticAccess
-    url: agentic-access/microsoft-azure-automation-agentic-access.yml
-  - type: DomainSecurity
-    url: security/microsoft-azure-automation-domain-security.yml
-  - type: Authentication
-    url: authentication/microsoft-azure-automation-authentication.yml
-  - type: OAuthScopes
-    url: scopes/microsoft-azure-automation-scopes.yml
-  - type: GitHubOrganization
-    url: https://github.com/azureautomation
-  - type: Portal
-    url: https://portal.azure.com/
-  - type: Pricing
-    url: https://azure.microsoft.com/en-us/pricing/
-  - type: TermsOfService
-    url: https://www.microsoft.com/en-us/legal/terms-of-use
-  - type: PrivacyPolicy
-    url: https://privacy.microsoft.com/en-us/privacystatement
-  - type: Support
-    url: https://support.microsoft.com/
-  - type: LlmsText
-    url: https://portal.azure.com/llms.txt
-  - url: https://azure.microsoft.com/en-us/blog/feed/
-    type: Blog
+- type: Website
+  url: https://www.microsoft.com/
+- type: AgenticAccess
+  url: agentic-access/microsoft-azure-automation-agentic-access.yml
+- type: DomainSecurity
+  url: security/microsoft-azure-automation-domain-security.yml
+- type: Authentication
+  url: authentication/microsoft-azure-automation-authentication.yml
+- type: OAuthScopes
+  url: scopes/microsoft-azure-automation-scopes.yml
+- type: GitHubOrganization
+  url: https://github.com/azureautomation
+- type: Portal
+  url: https://portal.azure.com/
+- type: Pricing
+  url: https://azure.microsoft.com/en-us/pricing/
+- type: TermsOfService
+  url: https://www.microsoft.com/en-us/legal/terms-of-use
+- type: PrivacyPolicy
+  url: https://privacy.microsoft.com/en-us/privacystatement
+- type: Support
+  url: https://support.microsoft.com/
+- type: LlmsText
+  url: https://portal.azure.com/llms.txt
+- url: https://azure.microsoft.com/en-us/blog/feed/
+  type: Blog
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
 x-parent: microsoft-azure
 x-relationship: product
