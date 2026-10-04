@@ -64,6 +64,9 @@ apis:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/rest/api/automation/
 common:
+- type: CapabilityMap
+  url: capabilities/microsoft-azure-automation-capability-edges.yml
+  name: Azure Automation Business Capability Map
 - type: Website
   url: https://www.microsoft.com/
 - type: AgenticAccess
